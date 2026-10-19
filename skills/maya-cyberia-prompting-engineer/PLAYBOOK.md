@@ -96,7 +96,7 @@ photo, 1998` · `magazine scan, halftone dots`
 - Texto sempre entre aspas: `the label reads "VITAFLOW"`
 - Máx ~12 palavras por elemento; 1 elemento por vez quando der
 - Tipografia como designer: `bold condensed sans-serif, white on red`
-- Texto crítico → GPT Image 2.5 (ou Nano Banana 2.1/Pro). Melhor ainda: gerar
+- Texto crítico → GPT Image 2.5 (ou Nano Banana 2.1). Melhor ainda: gerar
   imagem limpa e aplicar texto no editor (100% confiável)
 - **Nunca confie em texto no Soul 2.0**: ele desenha texto falso (crachá,
   bordado, legenda) até quando o prompt proíbe. Limpe no GPT Image.
@@ -112,7 +112,7 @@ photo, 1998` · `magazine scan, halftone dots`
 
 **Inserir produto real (2 passos):** 1) gere a cena com a mão em posição
 (`hand raised, fingers curled as if holding a bottle`); 2) insira o
-produto com Nano Banana 2.1 (ou Pro) / GPT Image 2.5 edit + foto de referência:
+produto com Nano Banana 2.1 / GPT Image 2.5 edit + foto de referência:
 `Place the attached bottle in her hand. Match the window light, add
 contact shadow, keep face and pose unchanged.` Nunca deixe a engine
 inventar o rótulo de memória.

@@ -88,6 +88,12 @@ skills/maya-cyberia-prompting-engineer/
   references/engines-2026.md  cada engine hoje: versão, dialeto, o que funciona
   references/realism-cues.md  biblioteca de pistas de realismo
   references/lessons.md       lições que custaram crédito pra aprender
+  references/realismo-iphone-paparazzi.md   selfie, UGC, candid, câmera escondida
+  references/avatar-influencer.md           persona recorrente, character sheet, avatar falante
+  references/packshot-produto.md            produto na mão/mesa, escala em %, rótulo
+  references/criativo-dtc.md                anúncio, cena de prova, capa, compliance
+  references/erros-e-correcoes.md           sintoma → causa → correção, tudo testado
+  references/exemplos-aprovados.md          14 prompts literais com status
   scripts/forge.py            gera prompt pronto (receita x engine)
 chatgpt/                      pacote do GPT (instructions + knowledge + config)
 ```

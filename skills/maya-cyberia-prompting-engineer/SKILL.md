@@ -62,7 +62,9 @@ Lista completa (drone, CCTV, dashcam, webcam, polaroid, magazine scan...) no `PL
 | Avatar/UGC com estética de rede social | Higgsfield Soul 2.0 — preset ANTES, prompt positivo-only |
 | Texto exato na imagem (rótulo, headline) | GPT Image 2.5 (`flare` rápido / `sunburst` precisão), texto entre aspas, ≤12 palavras |
 | Editar imagem / inserir produto real / consistência multi-turno | Nano Banana 2.1 (`gemini-nano-banana-2.1`) |
-| Manter o rosto da referência em cena nova (só com autorização da pessoa) | Seedream 5.0 Pro ou Nano Banana 2.1 |
+| Manter o rosto da referência em cena nova (só com autorização da pessoa) | Seedream 5.0 Pro (Nano Banana 2.1 com 1 ref só) |
+| Casting de avatar humano hiper-real | Soul 2.0, Seedream ou GPT Image (Nano Banana fica pra keyframe, cena, objeto, edição) |
+| Character sheet a partir de selfie | GPT Image 2, fora da ferramenta de vídeo |
 | Consertar texto falso desenhado por outra engine | GPT Image com referência + `keep identical` |
 
 Dialeto: Nano/Seedream = prosa narrativa · GPT Image = seções estruturadas ·
@@ -157,6 +159,17 @@ rejuvenescer.
   metadata, texto, referências, exemplo. **Leia antes de escolher engine.**
 - `references/lessons.md` — lições de campo ("regra · por quê").
 - `references/realism-cues.md` — biblioteca de cues por lane.
+
+**Por tema** (carregue só o que o pedido toca):
+
+| Pedido | Arquivo |
+|---|---|
+| Foto de celular, selfie, UGC, candid, paparazzi, câmera escondida | `references/realismo-iphone-paparazzi.md` |
+| Avatar, influencer, persona recorrente, character sheet, still pra avatar falante | `references/avatar-influencer.md` |
+| Produto na mão/mesa, escala, rótulo, ícone 3D, macro de prova | `references/packshot-produto.md` |
+| Anúncio, cena de prova, capa/key art, plate de cenário, compliance | `references/criativo-dtc.md` |
+| Saiu errado e já tentou uma vez | `references/erros-e-correcoes.md` (sintoma → causa → correção) |
+| Quer um molde que já passou | `references/exemplos-aprovados.md` (14 prompts literais com status) |
 - `scripts/forge.py` — gera o prompt pronto (7 receitas × 4 dialetos):
   `python3 scripts/forge.py --recipe ugc-selfie --engine soul`
   Lote: `--json scripts/briefs.example.json --out prompts.txt` · Ver tudo: `--list`
