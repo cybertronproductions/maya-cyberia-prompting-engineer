@@ -87,7 +87,7 @@ smile, lips together, eyes on the lens`.
 **2. Tokens de pele proibidos** (viram veia, couro, envelhecimento; pior em 45+):
 `heavy, heavy breasts, natural skin, natural skin pores, mature skin texture, real age
 detail, visible texture, fine hairs, grain, sensor noise, oversharpening, etched wrinkles`.
-Busto grande: `big bust with deep cleavage`, nunca `heavy`.
+Corpo: descreva em termos neutros de roupa e silhueta, nunca `heavy`.
 
 **3. Restrições viram afirmação positiva:** `one single adult woman, exactly two hands
 with five fingers each, clean simple composition`. Nomear o proibido é pedir o proibido.
@@ -95,7 +95,7 @@ with five fingers each, clean simple composition`. Nomear o proibido é pedir o 
 **4. Skin Lock — obrigatório em sujeito 45+:**
 `Smooth even skin tone across the face, neck and chest, soft clear skin surface, uniform
 complexion, clean retouched photographic finish, soft diffused front light wrapping the
-chest, gentle shadow transitions.` Luz dura de abajur expõe veias: use luz suave frontal.
+face and neck, gentle shadow transitions.` Luz dura de abajur expõe veias: use luz suave frontal.
 
 **5. Pose Lock (lote):** nunca `hand on chest` / `touching collarbone` (o modelo repete
 em todo o lote). Declare os dois braços e as duas mãos e gire uma pose por variante:
