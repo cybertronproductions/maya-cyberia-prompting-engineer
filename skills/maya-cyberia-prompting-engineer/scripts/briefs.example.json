@@ -1,0 +1,28 @@
+[
+  {
+    "label": "ugc-carro",
+    "recipe": "ugc-selfie",
+    "engine": "soul",
+    "subject": "27yo Brazilian woman, curly brown hair tied up",
+    "scene": "parked car at a supermarket lot, shopping bags on the passenger seat"
+  },
+  {
+    "label": "editorial-revista",
+    "recipe": "editorial",
+    "engine": "flux",
+    "subject": "24yo italian-latina model, dark wavy hair, bright blue eyes"
+  },
+  {
+    "label": "packshot-vitaflow",
+    "recipe": "packshot",
+    "engine": "gpt2",
+    "text": "VITAFLOW",
+    "text_style": "bold condensed sans-serif, white on deep red label"
+  },
+  {
+    "label": "doutora-clinica",
+    "recipe": "testimonial",
+    "engine": "nano2",
+    "subject": "38yo Brazilian woman doctor, shoulder-length brown hair, warm confident expression"
+  }
+]

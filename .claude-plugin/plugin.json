@@ -1,0 +1,9 @@
+{
+  "name": "maya-cyberia",
+  "description": "Maya Cyberia Prompting Engineer by Z9: prompts de imagem hiper-realistas (Nano Banana, GPT Image 2, Higgsfield Soul 2.0, FLUX.2, Seedream).",
+  "version": "1.0.0",
+  "author": { "name": "Cyborg Z9", "url": "https://github.com/cybertronproductions" },
+  "homepage": "https://github.com/cybertronproductions/maya-cyberia-prompting-engineer",
+  "license": "MIT",
+  "keywords": ["prompt-engineering", "image-generation", "nano-banana", "gpt-image", "higgsfield", "ugc", "realism"]
+}

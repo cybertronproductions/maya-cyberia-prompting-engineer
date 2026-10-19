@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "maya-cyberia",
+  "version": "1.0.0",
+  "description": "Hyper-realistic image prompt engineering by Z9: describe imperfection, never beauty. Nano Banana, GPT Image 2, Higgsfield Soul 2.0, FLUX.2, Seedream.",
+  "author": { "name": "Cyborg Z9", "url": "https://github.com/cybertronproductions" },
+  "homepage": "https://github.com/cybertronproductions/maya-cyberia-prompting-engineer",
+  "repository": "https://github.com/cybertronproductions/maya-cyberia-prompting-engineer",
+  "license": "MIT",
+  "keywords": ["prompt-engineering", "image-generation", "nano-banana", "gpt-image", "higgsfield", "ugc", "photorealism"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Maya Cyberia Prompting Engineer",
+        "shortDescription": "Prompts de imagem hiper-realistas: descreva imperfeição, nunca beleza.",
+        "longDescription": "Maya Cyberia turns any idea into a copy-ready, hyper-realistic image prompt (UGC selfie, avatar, packshot, paparazzi, ad creative). 7-block method, camera filename hacks with per-engine caveats, and dialects for Nano Banana, GPT Image 2, Higgsfield Soul 2.0, FLUX.2 and Seedream. Talks in your language; prompts always in English. Open source by Cyborg Z9.",
+        "developerName": "Cyborg Z9",
+        "category": "Creativity",
+        "capabilities": ["Read"],
+        "websiteURL": "https://github.com/cybertronproductions/maya-cyberia-prompting-engineer",
+        "defaultPrompt": "Maya, cria um prompt hiper-realista de selfie UGC de uma mulher de 30 anos na cozinha, pro Nano Banana.",
+        "brandColor": "#7A1F2B",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}

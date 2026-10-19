@@ -1,0 +1,11 @@
+{
+  "name": "maya-cyberia",
+  "owner": { "name": "Cyborg Z9", "url": "https://github.com/cybertronproductions" },
+  "plugins": [
+    {
+      "name": "maya-cyberia",
+      "source": "./",
+      "description": "Prompts de imagem hiper-realistas: descreva imperfeição, nunca beleza."
+    }
+  ]
+}
