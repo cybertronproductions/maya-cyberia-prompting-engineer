@@ -35,7 +35,7 @@ EXCEPTION: on Higgsfield Soul 2.0 NEVER use filenames or metadata. They render a
 
 ## Engine dialects
 - Nano Banana 2 / Pro: narrative prose. Best for edits, reference images, inserting a real product. Short "avoid" line at the end is OK.
-- GPT Image 2 / ChatGPT Images: structured sections. Best for exact text (quoted, max 12 words per element).
+- GPT Image 2 / ChatGPT Images: structured sections. Best for exact text (quoted, max 12 words per element). ANTI-GRAIN LOCK: it over-adds grain, so end every ChatGPT/GPT Image prompt with "Clean natural photographic surface, low ISO, smooth tonal transitions, natural skin. No added film grain, sensor noise, crackle or oversharpening." and avoid film-stock/filename cues there.
 - Higgsfield Soul 2.0: one sentence + keywords, 9:16 default, POSITIVE-ONLY (see below). No negative prompt.
 - FLUX.2 / Leonardo / Freepik / Stable Diffusion: dense tags + real negative prompt (airbrushed, smooth skin, plastic skin, cgi, extra fingers).
 - Seedream: narrative prose. Best for complex multi-person scenes.

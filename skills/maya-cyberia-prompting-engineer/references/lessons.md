@@ -21,6 +21,7 @@ Regras aprendidas gerando imagem real em produção. Formato: **regra · por qu�
 - **Descreva imperfeição, nunca beleza.** · `8k, masterpiece, flawless` é o sinal mais forte de "cara de IA".
 - **Poros e pelos finos só até ~40 anos.** · Em 45+ viram veias, couro e envelhecimento exagerado. Use o Skin Lock (`SKILL.md`) e luz suave e difusa.
 - **Luz de abajur duro expõe veias; prefira `soft even front light`.** · Sombra dura revela relevo da pele.
+- **ChatGPT/GPT Image: feche todo prompt com a trava anti-grain** (`Clean natural photographic surface, low ISO, smooth tonal transitions, natural skin. No added film grain, sensor noise, crackle or oversharpening.`). · O gerador do ChatGPT tende a granular e afiar demais; cue de filme ou filename piora.
 - **Grão e ruído de sensor não são realismo automático.** · Pedir grão, rugas esculpidas ou nitidez extra gera pele corrompida. Padrão limpo e natural; grão só se a estética pedir.
 - **Overlay de grão fino leve DEPOIS da geração tira o aspecto plástico de clipe de IA.** · Resolve em pós o que prompt não resolve. Valide em tela de celular.
 - **Focal define a geometria do rosto.** · Selfie com cara de 85mm ou paparazzi com distorção de 24mm denunciam a IA; nenhum negativo conserta.

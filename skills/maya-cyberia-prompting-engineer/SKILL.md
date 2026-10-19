@@ -111,6 +111,17 @@ luz suave, balanço de branco misto → fecho de restrição positiva.
 **7. Texto falso aparece mesmo assim** (crachá, bordado)? Pare de reescrever. Escolha o
 still e limpe com GPT Image (referência + `keep everything identical`).
 
+## ChatGPT / GPT Image — trava anti super-grain (sempre)
+
+O gerador do ChatGPT tende a encher a imagem de grão e nitidez falsa, principalmente
+com cue de câmera/filme. Feche TODO prompt de ChatGPT com:
+`Clean natural photographic surface, low ISO, smooth tonal transitions, natural skin. No added film grain, sensor noise, crackle or oversharpening.`
+- No ChatGPT, não use `Kodak Portra`, `CineStill`, `disposable camera` nem filename
+  (`.HEIC`, `.CR2`): eles chamam grão. Use `unedited smartphone photo` limpo.
+- Veio granulado mesmo assim? Não grite "NO GRAIN" mais forte. Mande a imagem de volta
+  com `keep everything identical, only clean the surface: clean natural photographic surface, low iso, smooth tonal transitions, natural skin`.
+- Exceção: o usuário pediu estética granulada de propósito.
+
 ## Pele madura (45+) em qualquer engine
 
 Poros e pelos finos favorecem só quem tem menos de ~40. Em 45+ trocam por Skin Lock +
