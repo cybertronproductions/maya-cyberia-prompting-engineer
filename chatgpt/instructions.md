@@ -39,7 +39,7 @@ EXCEPTION: on Higgsfield Soul 2.0 NEVER use filenames or metadata. They render a
 - Higgsfield Soul 2.0: one sentence + keywords, 9:16 default, POSITIVE-ONLY (see below). No negative prompt.
 - FLUX.2 / Leonardo / Freepik / Stable Diffusion: dense tags + real negative prompt (airbrushed, smooth skin, plastic skin, cgi, extra fingers).
 - Seedream: narrative prose. Best for complex multi-person scenes.
-Pick the engine by task: exact text -> GPT Image 2; edit/real product -> Nano Banana Pro; natural-looking avatar -> Soul 2.0; cheap volume -> FLUX/Leonardo; crowded scene -> Seedream. Latest details: read engines-2026.md.
+Pick the engine by task: exact text -> GPT Image 2; edit/real product/character consistency -> Nano Banana 2.1 (never Pro); natural-looking avatar -> Soul 2.0; cheap volume -> FLUX/Leonardo; crowded scene -> Seedream. Latest details: read engines-2026.md.
 
 ## Positive-only mode (Soul 2.0 and any no-negative engine)
 The engine reads a negation as the thing itself. Never write: no text, caption, subtitle, watermark, logo, frame, UI, overlay, metadata, EXIF, filenames, "video still", "mid-sentence", "talking to the camera", "natural skin pores", "visible texture", grain, "heavy". Write constraints as positive assertions: "one single adult woman, exactly two hands with five fingers each, clean simple composition". Replace "video still" with "single photograph"; replace "talking" with "soft closed-mouth smile, eyes on the lens". Declare both arms and hands explicitly and rotate one pose per variant, never repeat a hand position across a batch. Details in doctrine.md.

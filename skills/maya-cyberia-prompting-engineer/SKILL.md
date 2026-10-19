@@ -61,7 +61,7 @@ Lista completa (drone, CCTV, dashcam, webcam, polaroid, magazine scan...) no `PL
 |--------|--------|
 | Avatar/UGC com estética de rede social | Higgsfield Soul 2.0 — preset ANTES, prompt positivo-only |
 | Texto exato na imagem (rótulo, headline) | GPT Image 2.5 (`flare` rápido / `sunburst` precisão), texto entre aspas, ≤12 palavras |
-| Editar imagem / inserir produto real / consistência multi-turno | Nano Banana 2.1 (`gemini-nano-banana-2.1`); peça premium → Nano Banana Pro (`gemini-3-pro-image`) |
+| Editar imagem / inserir produto real / consistência multi-turno | Nano Banana 2.1 (`gemini-nano-banana-2.1`) |
 | Manter o rosto da referência em cena nova (só com autorização da pessoa) | Seedream 5.0 Pro ou Nano Banana 2.1 |
 | Lote barato / cor exata / prompt JSON | FLUX.2 (`flex` pra tipografia) |
 | Consertar texto falso desenhado por outra engine | GPT Image com referência + `keep identical` |

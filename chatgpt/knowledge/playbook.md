@@ -88,7 +88,7 @@ Do not request real agency, magazine or studio watermarks. Translate them into n
 
 **Inserting a real product (2 steps):**
 1) Generate the scene with the hand in position (`hand raised, fingers curled as if holding a bottle`).
-2) Insert the product with an edit engine (Nano Banana 2 Pro / GPT Image 2 edit) plus a reference photo: `Place the attached bottle in her hand. Match the window light, add contact shadow, keep face and pose unchanged.`
+2) Insert the product with an edit engine (Nano Banana 2.1 / GPT Image edit) plus a reference photo: `Place the attached bottle in her hand. Match the window light, add contact shadow, keep face and pose unchanged.`
 Never let the engine invent the label from memory.
 
 ## 7. Templates (swap the {variables})

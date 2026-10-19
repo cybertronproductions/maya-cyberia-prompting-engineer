@@ -37,12 +37,11 @@ Na dúvida, use a versão em prosa (`unedited smartphone photo, HEIC compression
 - **Família (ids):** 2.1 = `gemini-nano-banana-2.1` · 2 = `gemini-3.1-flash-image`
   (anterior; docs recomendam 2.1 em projeto novo) · 2 Lite =
   `gemini-3.1-flash-lite-image` (mais rápido/barato, só 1K, fraco em multi-ref) ·
-  **Pro = `gemini-3-pro-image`** (premium; id de preview em fontes de terceiros:
-  `gemini-3-pro-image-preview`) · legado `gemini-2.5-flash-image`.
+  legado `gemini-2.5-flash-image`. Existe um Pro (`gemini-3-pro-image`), mas **não usamos:
+  tudo roda no Nano Banana 2.1**.
 - **Melhor uso:** trabalho-cavalo (geração + edição conversacional), consistência
   de personagem entre turnos, texto/infográfico, edição com foto de referência
-  (inserir produto real). Pro: tarefa mais complexa, marca, localização, texto
-  profissional.
+  (inserir produto real).
 - **Dialeto:** prosa narrativa, frase completa. Molde oficial fotorrealista:
   `A photorealistic [shot type] of [subject] in [setting]. [Lighting]. Shot from
   [camera angle] with [lens].` Fórmula do guia de Cloud: sujeito + ação + local +
@@ -52,11 +51,9 @@ Na dúvida, use a versão em prosa (`unedited smartphone photo, HEIC compression
 - **Metadata hack:** risky. Modelo lê prosa; o token de arquivo é empurrão fraco
   e não foi reconfirmado na 2.1. Prefira `unedited smartphone photo`.
 - **Texto na imagem:** forte (2.1 melhorou texto e layout de infográfico). Texto
-  exato entre aspas + descrição da fonte. Pra trabalho profissional de texto o
-  Google ainda aponta o Pro.
+  exato entre aspas + descrição da fonte. Texto longo e crítico: GPT Image.
 - **Referências:** até 14 imagens no total. Consistência de até 4 personagens e
-  fidelidade de até 10 objetos (2.1/2). Pro: até 5 personagens, 6 objetos, 3 de
-  estilo (leitura de tabela achatada, não confirmado). Diga o papel de cada
+  fidelidade de até 10 objetos (2.1/2). Diga o papel de cada
   imagem ("image 1 = identidade, image 2 = pose, image 3 = produto").
 - **Detalhes de API:** saída 1K (padrão), 2K, 4K (maiúsculo: `2K`). Pensamento
   sempre ligado; níveis `minimal` / `medium` (padrão) / `high`. `seed`, `topK`,
@@ -231,7 +228,6 @@ reflected in the window, shot on CineStill 800T, shallow depth of field
 - Google, guia de geração de imagem (Gemini API): https://ai.google.dev/gemini-api/docs/image-generation
 - Google Cloud, guia de prompt Nano Banana: https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana
 - Lançamento do Nano Banana 2.1 (data): https://letsdatascience.com/news/google-rolls-out-nano-banana-21-image-model-c6ac3b89
-- Nano Banana Pro (terceiros): https://www.cometapi.com/zh-CN/models/google/gemini-3-pro-image
 - OpenAI, guia de imagem (2.5 flare/sunburst): https://developers.openai.com/api/docs/guides/image-generation
 - gpt-image-2 (lançamento, terceiros): https://neurohive.io/en/news/chatgpt-images-2-0-openai-launches-image-generation-model-with-reasoning-2k-resolution-and-multilingual-text/
 - GPT Image 2.5 (terceiros): https://muapi.ai/playground/gpt-image-2.5-text-to-image
