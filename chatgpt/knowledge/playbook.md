@@ -75,7 +75,7 @@ Do not request real agency, magazine or studio watermarks. Translate them into n
 - Max ~12 words per element; one element at a time when possible.
 - Typography like a designer: `bold condensed sans-serif, white on red`
 - Critical text -> GPT Image 2. Even better: generate the clean image and add the text in an editor (100% reliable).
-- Accents (a with ogonek, o with double acute, c-cedilla, sharp s): GPT Image 2 is fine; FLUX/Leonardo get them wrong, so add text in an editor.
+- Accents (a with ogonek, o with double acute, c-cedilla, sharp s): GPT Image 2 is fine; other engines get them wrong, so add text in an editor.
 - On Soul 2.0 do not ask for text at all (see doctrine.md); add it afterwards.
 
 ## 6. Packshot: product that does not float

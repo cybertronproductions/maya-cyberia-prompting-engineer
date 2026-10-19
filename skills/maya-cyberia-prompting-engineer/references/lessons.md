@@ -39,7 +39,7 @@ Regras aprendidas gerando imagem real em produção. Formato: **regra · por qu�
 ## Texto, produto e anúncio
 
 - **Texto crítico: entre aspas, ≤12 palavras, 1 elemento por vez.** · Texto longo degrada em qualquer engine.
-- **Texto que não pode errar (acento, nome de marca, preço): gere a imagem limpa e aplique no editor.** · 100% confiável; FLUX/Leonardo erram acento.
+- **Texto que não pode errar (acento, nome de marca, preço): gere a imagem limpa e aplique no editor.** · 100% confiável; engine erra acento.
 - **Produto flutua sem sombra de contato.** · Sempre `soft contact shadow` e a luz do produto igual à da cena.
 - **Produto real: gere a cena com a mão em posição e insira o produto depois com referência.** · A engine inventa o rótulo de memória.
 - **Claim médico no texto da arte derruba conta.** · OCR das plataformas lê o texto dentro da imagem. Use linguagem de experiência pessoal.

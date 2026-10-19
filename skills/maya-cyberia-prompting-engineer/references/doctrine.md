@@ -22,7 +22,7 @@ Follow this sequence every time.
    - `editorial`: fashion, paparazzi, press or magazine outtake.
    - `cinema-still`: narrative lighting, production design, film-frame composition.
    - `product-commercial`: controlled materials, reflections, packaging, copy space.
-   - Name the engine (Imagen 4, ChatGPT Images, Midjourney, Stable Diffusion, Leonardo, Nano Banana, FLUX, Seedream, **Higgsfield Soul 2.0**). If the engine is **no-negative** (Soul 2.0), switch immediately to Positive-Only Mode below and drop every negative construction.
+   - Name the engine (Nano Banana 2.1, GPT Image / ChatGPT Images, Seedream 5.0, **Higgsfield Soul 2.0**). If the engine is **no-negative** (Soul 2.0), switch immediately to Positive-Only Mode below and drop every negative construction.
 4. Build the subject and action.
    - Specify identity, adult age when relevant, expression, pose, styling, action and emotional intent.
 5. Build the scene and composition.

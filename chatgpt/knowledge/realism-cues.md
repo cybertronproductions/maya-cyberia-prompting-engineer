@@ -99,7 +99,7 @@ Use imperfections that follow logically from the scene. Never add grime, noise o
 
 ## Failure Prevention
 
-Negative-capable engines (Nano Banana, GPT Image, FLUX, Leonardo, Freepik, Stable Diffusion, Imagen, Midjourney): add a short negative block tailored to the scene:
+Negative-capable engines (Nano Banana 2.1, GPT Image, Seedream): add a short negative block tailored to the scene:
 
 ```text
 no beauty filter, no plastic skin, no CGI sheen, no duplicate person, no duplicated products, no extra fingers, no malformed hands, no warped face, no impossible reflection, no floating objects, no unreadable labels unless text is intentionally omitted, no captions, no watermark, no logo, no app interface, no phone frame, no collage, no split screen

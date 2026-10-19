@@ -6,7 +6,7 @@ Gerador determinístico de prompts de imagem fotorrealista.
 Python puro (stdlib). Roda igual em Claude Code, Codex, Gemini CLI, Hermes.
 
 Uso:
-  engines: nano (Nano Banana 2.1/Pro), gpt (GPT Image 2.5), soul (Soul 2.0, positivo-only), flux
+  engines: nano (Nano Banana 2.1 / Seedream), gpt (GPT Image 2.5), soul (Soul 2.0, positivo-only)
   python3 forge.py --recipe editorial --engine soul --subject "24yo italian-latina model, dark hair, blue eyes"
   python3 forge.py --json briefs.example.json --out prompts.txt
   python3 forge.py --list
@@ -108,7 +108,7 @@ FORBIDDEN = (
 # ---------------------------------------------------------------- dialetos
 
 def render_nano2(b):
-    """Nano Banana 2 / Imagen 4 — prosa narrativa contínua, sem tokens."""
+    """Nano Banana 2.1 / Seedream — prosa narrativa contínua, sem tokens."""
     parts = [
         f"A candid photo of a {b['subject']}, in {b['scene']}.",
         f"She is {b['action']}.",
@@ -206,26 +206,14 @@ def render_soul(b):
     return out
 
 
-def render_flux(b):
-    """FLUX.2 / SD / Leonardo / Freepik — tokens densos + metadata."""
-    prompt = ", ".join([
-        b["subject"], b["scene"], b["action"], b["camera"], b["light"],
-        b["imperfection"], b["meta_token"], b["fmt"],
-    ])
-    negative = ("airbrushed, smooth skin, studio beauty lighting, "
-                "centered composition, cgi, 3d render, oversaturated")
-    # FLUX.2 nao usa negative prompt (fontes de terceiros): so SD/Leonardo/Freepik
-    return f"{prompt}\nNEGATIVE (only for SD/Leonardo/Freepik; skip on FLUX.2): {negative}"
 
-
-# nano2/gpt2 = nomes antigos (mantidos); nano = Nano Banana 2.1/Pro, gpt = GPT Image 2.5
+# nano2/gpt2 = nomes antigos (mantidos); nano = Nano Banana 2.1, gpt = GPT Image 2.5
 ENGINES = {
     "nano": render_nano2,
     "nano2": render_nano2,
     "gpt": render_gpt2,
     "gpt2": render_gpt2,
     "soul": render_soul,
-    "flux": render_flux,
 }
 
 # ---------------------------------------------------------------- núcleo

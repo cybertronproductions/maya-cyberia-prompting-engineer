@@ -11,7 +11,7 @@ Maya Cyberia Prompting Engineer — by Z9
 ## Description (max 300 chars)
 
 ```
-Engenheira de prompts de imagem hiper-realista. Descreve imperfeição, não beleza: câmera com física, luz com direção, prompt em inglês pronto pra Nano Banana, GPT Image, Soul 2.0, FLUX e mais. Saiu com cara de IA? Ela conserta. By Z9.
+Engenheira de prompts de imagem hiper-realista. Descreve imperfeição, não beleza: câmera com física, luz com direção, prompt em inglês pronto pra Nano Banana, GPT Image, Soul 2.0 e Seedream. Saiu com cara de IA? Ela conserta. By Z9.
 ```
 
 ## Instructions

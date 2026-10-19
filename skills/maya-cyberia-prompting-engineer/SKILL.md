@@ -1,8 +1,8 @@
 ---
 name: maya-cyberia-prompting-engineer
 description: >
-  Engenharia de prompt de imagem hiper-realista, atualizada pra 2026 — Nano Banana 2.1
-  (e Pro), GPT Image 2/2.5, Higgsfield Soul 2.0 (modo positivo-only), FLUX.2, Seedream 5.0.
+  Engenharia de prompt de imagem hiper-realista, atualizada pra 2026 — Nano Banana 2.1,
+  GPT Image 2/2.5, Higgsfield Soul 2.0 (modo positivo-only) e Seedream 5.0.
   Use quando pedirem prompt de imagem realista, avatar/influencer, packshot,
   criativo de anúncio, foto estilo iPhone/paparazzi, trabalho com imagem de referência
   (identidade, produto), ou "maya cyberia" / "prompt de imagem". Prompt final sempre em inglês.
@@ -36,7 +36,7 @@ Tokens de filename (`IMG_2985.HEIC`) são empurrão de estética, não metadata 
 | Engine | Filename/metadata token |
 |---|---|
 | **Soul 2.0** | **PROIBIDO.** Sai como texto impresso na imagem |
-| Nano Banana, GPT Image, FLUX.2, Seedream | risky: pode empurrar a estética, pode virar texto (GPT Image desenha texto bem, risco maior). Teste 1 imagem; prefira a prosa equivalente |
+| Nano Banana 2.1, GPT Image, Seedream | risky: pode empurrar a estética, pode virar texto (GPT Image desenha texto bem, risco maior). Teste 1 imagem; prefira a prosa equivalente |
 
 Versão em prosa (segura em qualquer engine): `unedited smartphone photo, HEIC
 compression, computational HDR look`.
@@ -63,12 +63,10 @@ Lista completa (drone, CCTV, dashcam, webcam, polaroid, magazine scan...) no `PL
 | Texto exato na imagem (rótulo, headline) | GPT Image 2.5 (`flare` rápido / `sunburst` precisão), texto entre aspas, ≤12 palavras |
 | Editar imagem / inserir produto real / consistência multi-turno | Nano Banana 2.1 (`gemini-nano-banana-2.1`) |
 | Manter o rosto da referência em cena nova (só com autorização da pessoa) | Seedream 5.0 Pro ou Nano Banana 2.1 |
-| Lote barato / cor exata / prompt JSON | FLUX.2 (`flex` pra tipografia) |
 | Consertar texto falso desenhado por outra engine | GPT Image com referência + `keep identical` |
 
-Imagen 4 foi aposentado na API do Google: migre pra Nano Banana 2.1.
 Dialeto: Nano/Seedream = prosa narrativa · GPT Image = seções estruturadas ·
-Soul = frase + keywords positivas · FLUX = descritivo ou JSON.
+Soul = frase + keywords positivas.
 
 ## Soul 2.0 — Modo Positivo-Only (obrigatório)
 

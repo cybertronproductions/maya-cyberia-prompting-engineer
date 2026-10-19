@@ -22,10 +22,7 @@ Na dúvida, use a versão em prosa (`unedited smartphone photo, HEIC compression
 | Nano Banana (Google) | **2.1** `gemini-nano-banana-2.1` (GA 2026-10-06) | sem campo; descreva em positivo | risky | forte | até 14 |
 | GPT Image (OpenAI) | **2.5** (`-flare` rápido, `-sunburst` precisão) | sem campo; positivo | risky | muito forte | várias (limite não confirmado) |
 | Higgsfield Soul | **2.0** | **NÃO. Modo positivo-only** | **não** | fraco: desenha texto falso | Soul ID / referência |
-| FLUX (BFL) | **FLUX.2** (pro/flex/dev/max/klein); FLUX 3 anunciado | não (descreva o que quer) | risky | bom (flex = tipografia) | até ~10 |
 | Seedream (ByteDance) | **5.0 Pro** (5.0 Lite desde fev/2026) | sem campo; positivo | risky | bom, multilíngue | até 14 |
-| Midjourney | **V8.1/V8.2** | `--no` (suporte em V8.x: não confirmado) | risky | melhorou (texto entre aspas) | `--oref` só V7 (não confirmado em V8) |
-| Imagen (Google) | **aposentado** (Imagen 4 desligado na API) | — | — | — | migrar pra Nano Banana |
 
 ---
 
@@ -134,32 +131,7 @@ light, mixed white balance, authentic still-photo look. One single adult woman,
 exactly two hands with five fingers each, clean simple composition.
 ```
 
-## 4. FLUX.2 (Black Forest Labs)
-
-- **Versão atual:** FLUX.2 em variantes `[pro]` (produção), `[flex]` (controle
-  máximo de parâmetros e tipografia), `[dev]` (open weights, experimento), `[max]`
-  e `klein` (leve). **FLUX 3** foi anunciado em 2026-07-23 (multimodal), mas só
-  Video e Action estavam em acesso antecipado; **FLUX 3 Image sem disponibilidade
-  confirmada** em outubro (não confirmado).
-- **Melhor uso:** volume em lote, edição multi-referência, controle de cor exata
-  (hex), prompt estruturado.
-- **Dialeto:** descritivo, em ordem (sujeito primeiro). Aceita **prompt em JSON**
-  (sujeitos, composição, luz, câmera) e cor por hex (`color #E4572E`).
-- **Negativo:** fontes de terceiros dizem que o FLUX não usa negative prompt;
-  descreva o que quer (não confirmado em doc BFL).
-- **Metadata hack:** risky (herança do FLUX.1/SD, não reconfirmado no FLUX.2).
-- **Texto na imagem:** bom; `[flex]` é a indicada pra tipografia. Acento e
-  caractere raro ainda falham: aplique no editor.
-- **Referências:** até ~10 imagens (edição, estilo, identidade; fonte de terceiros).
-- **Exemplo:**
-```
-Candid 35mm street photo of a 28-year-old woman in a denim jacket walking toward
-the camera on a downtown crosswalk, looking at something off-frame left. Open
-shade, cool soft light, sunlit storefronts behind, pedestrians motion-blurred.
-Slightly rushed framing, documentary look. 3:2.
-```
-
-## 5. Seedream (ByteDance)
+## 4. Seedream (ByteDance)
 
 - **Versão atual:** **Seedream 5.0 Pro** (data disputada: 23/jun ou 12/ago de 2026,
   não confirmado) e **5.0 Lite** (fev/2026, raciocina antes de renderizar e usa
@@ -182,44 +154,6 @@ warm wall sconces, her jacket exactly as in the original (matte black leather).
 Keep her face, hair and expression unchanged. Mid-key lighting, not pitch black.
 ```
 
-## 6. Midjourney (V8.x)
-
-- **Versão atual:** V8.0 Alpha em 2026-03-17; **V8.1 em 2026-04-30** (docs oficiais:
-  mais rápido, 2K HD nativo); **V8.2 padrão desde 2026-07-24** (só fonte de
-  terceiros, não confirmado em docs oficiais). Sem `--v`, o prompt roda na padrão.
-  V8.1 exige perfil de personalização global liberado.
-- **Melhor uso:** estética, mood, arte e editorial. Pior em instrução precisa e
-  edição do que Nano Banana/GPT Image.
-- **Dialeto:** sujeito primeiro, frase natural curta + cauda de parâmetros
-  (`--ar 9:16 --v 8.1`).
-- **Negativo:** `--no` existe historicamente; suporte na V8.x tem fontes em
-  conflito (não confirmado). Prefira positivo.
-- **Metadata hack:** risky (não confirmado).
-- **Texto na imagem:** melhorou; texto entre aspas rende mais certo. Ainda perde
-  pra GPT Image e Nano Banana em texto/edição segundo reviews de terceiros.
-- **Referências:** `--sref` (estilo) ok; `--oref` (omni reference) é V7; a versão V8
-  está em treino segundo fontes de terceiros (não confirmado).
-- **Nota da casa:** em 2026-07 o Midjourney foi deixado FORA do fluxo padrão
-  desta skill. Mantido aqui só como referência.
-- **Exemplo:**
-```
-candid portrait of a woman laughing at a diner counter at night, neon sign
-reflected in the window, shot on CineStill 800T, shallow depth of field
---ar 4:5 --v 8.1
-```
-
-## 7. Imagen (Google)
-
-- **Status:** a página oficial de geração de imagem da Gemini API já lista Imagen
-  como "legacy (shut down)". Fontes de terceiros dizem que os endpoints Imagen 4
-  (`imagen-4.0-generate-001`, `-ultra-`, `-fast-`) saíram do ar na Gemini API em
-  2026-08-17 (data não confirmada pelo Google); a doc do Firebase manda migrar
-  pra Nano Banana. Tutorial de setembro ainda os descreve como ativos no Vertex:
-  fontes em conflito, **(não confirmado)** se ainda existe em algum canal.
-- **O que fazer:** projeto novo = Nano Banana 2.1. Prompt de Imagen migra quase
-  direto (prosa), mas reteste: a saída muda.
-- Não há versão "Imagen 5" confirmada.
-
 ---
 
 ## Fontes
@@ -232,14 +166,7 @@ reflected in the window, shot on CineStill 800T, shallow depth of field
 - gpt-image-2 (lançamento, terceiros): https://neurohive.io/en/news/chatgpt-images-2-0-openai-launches-image-generation-model-with-reasoning-2k-resolution-and-multilingual-text/
 - GPT Image 2.5 (terceiros): https://muapi.ai/playground/gpt-image-2.5-text-to-image
 - Higgsfield Soul 2.0 (terceiros): https://creatify.ai/blog/higgsfield-soul-prompts-for-product-ads
-- FLUX.2 (Together): https://docs.together.ai/docs/quickstart-flux-2
-- FLUX.2 (Prodia): https://docs.prodia.com/models/flux-2/
-- FLUX 3: https://datanorth.ai/news/black-forest-labs-releases-flux-3
 - Seedream 5.0 Pro (OpenRouter): https://openrouter.ai/bytedance-seed/seedream-5-0-pro-20260812
 - Seedream 5.0 Lite: https://www.newsquawk.com/headlines/-bytedance-launches-seedream-50-lite-image-generation-model-which-is-first-with-online-search-capability
-- Midjourney, modelos: https://docs.midjourney.com/docs/models
-- Midjourney V8.1 review: https://vidmuse.ai/blog/midjourney-v8-1-review
-- Imagen, migração Firebase: https://firebase.google.com/docs/ai-logic/imagen-models-migration
-- Imagen 4, fim da API: https://unifically.com/blogs/imagen-4-api-shutdown
 
 Última verificação: 2026-10-19.

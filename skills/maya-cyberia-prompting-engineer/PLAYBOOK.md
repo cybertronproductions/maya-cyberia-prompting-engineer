@@ -58,7 +58,7 @@ table edge, condensation drops on the bottle`
 
 Os tokens de filename são empurrão de estética, não metadata real, e **não valem
 igual em todas as engines**: no **Soul 2.0 são proibidos** (saem como texto
-impresso); em Nano Banana, GPT Image, FLUX.2 e Seedream são
+impresso); em Nano Banana 2.1, GPT Image e Seedream são
 "risky" (podem empurrar a estética ou virar texto: teste 1 imagem e prefira a
 prosa equivalente). Dica pro: token (onde for seguro) + descrição do efeito
 juntos = estética do dataset + controle fino. Sem token, só a descrição já
@@ -100,7 +100,7 @@ photo, 1998` · `magazine scan, halftone dots`
   imagem limpa e aplicar texto no editor (100% confiável)
 - **Nunca confie em texto no Soul 2.0**: ele desenha texto falso (crachá,
   bordado, legenda) até quando o prompt proíbe. Limpe no GPT Image.
-- Acentos (ą, ő, ç, ß): GPT Image ok; FLUX/Leonardo erram — texto no editor
+- Acentos (ą, ő, ç, ß): GPT Image ok; as outras erram — texto no editor
 
 ## 6. Packshot — produto que não flutua
 

@@ -12,8 +12,8 @@ em 3 lugares:
 | **Claude Code** | plugin (instala em 2 comandos, abaixo) |
 | **Codex / outro agente** | copia a pasta `skills/maya-cyberia-prompting-engineer` |
 
-Engines cobertas: **Nano Banana**, **GPT Image 2**, **Higgsfield Soul 2.0**, **FLUX.2**,
-**Seedream**, Leonardo, Freepik. Detalhe de cada uma (versão,
+Engines cobertas: **Nano Banana**, **GPT Image 2**, **Higgsfield Soul 2.0** e
+**Seedream**. Detalhe de cada uma (versão,
 dialeto, se aceita negative prompt, se o hack de metadados funciona) em
 [`references/engines-2026.md`](skills/maya-cyberia-prompting-engineer/references/engines-2026.md).
 
@@ -108,6 +108,6 @@ Achou um token que funciona, ou uma engine que mudou? Abre uma issue ou PR com
 **English:** open-source hyper-realistic image prompt engineering skill for ChatGPT, Claude Code
 and Codex. Core rule: *don't ask for beauty, describe imperfection.* 7-block method, camera
 filename hacks (with per-engine caveats), engine dialects for Nano Banana, GPT Image 2,
-Higgsfield Soul 2.0, FLUX.2 and Seedream. MIT licensed.
+Higgsfield Soul 2.0 and Seedream. MIT licensed.
 
 Feito por **Cyborg Z9** · MIT
