@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maya Cyberia W7</title>
+<meta name="description" content="Maya Cyberia W7: agente especialista em prompts de imagem hiper-realistas. Nano Banana 2.1, GPT Image, Higgsfield Soul 2.0 e Seedream. By Cyborg Z9.">
+<meta property="og:title" content="Maya Cyberia W7 · Prompting Specialist Agent">
+<meta property="og:description" content="Não peça beleza. Descreva imperfeição. Prompts de imagem hiper-realistas prontos pra colar.">
+<meta property="og:image" content="maya.jpg">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0909; --bg2:#121011; --line:#2a2426; --text:#ece8e6; --mute:#9d9597;
+  --silver:#c9c6c4; --wine:#8F1D3F; --wine2:#b8325c; --glow:rgba(143,29,63,.45);
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.serif{font-family:"Instrument Serif",Georgia,serif;font-weight:400}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace}
+.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--mute)}
+
+/* nav */
+nav{position:sticky;top:0;z-index:10;backdrop-filter:blur(14px);background:rgba(10,9,9,.72);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:600;letter-spacing:.02em}
+.brand img{width:28px;height:28px;border-radius:8px}
+.navlinks{display:flex;gap:22px;font-size:14px;color:var(--mute)}
+.navlinks a:hover{color:var(--text)}
+
+/* hero */
+.hero{position:relative;padding:72px 0 88px}
+.hero::before{content:"";position:absolute;inset:-20% -10% auto auto;width:720px;height:720px;background:radial-gradient(circle,var(--glow),transparent 62%);pointer-events:none}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;position:relative}
+h1{font-size:clamp(46px,7vw,92px);line-height:.95;letter-spacing:-.02em;margin:18px 0 22px}
+h1 em{color:var(--wine2)}
+.lead{font-size:19px;color:var(--silver);max-width:520px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 22px;border-radius:12px;font-weight:600;font-size:15px;border:1px solid var(--line);transition:transform .15s,box-shadow .2s,background .2s;cursor:pointer;color:var(--text);background:var(--bg2);font-family:inherit}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:linear-gradient(180deg,#a3264c,var(--wine));border-color:#b8325c;box-shadow:0 10px 30px -8px var(--glow)}
+.btn.primary:hover{box-shadow:0 14px 40px -6px var(--glow)}
+.btn svg{width:18px;height:18px}
+.meta{display:flex;gap:18px;margin-top:22px;font-size:13px;color:var(--mute);flex-wrap:wrap}
+.portrait{position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--line);aspect-ratio:1;box-shadow:0 40px 90px -30px rgba(0,0,0,.9)}
+.portrait img{width:100%;height:100%;object-fit:cover;display:block}
+.portrait .tag{position:absolute;left:16px;bottom:16px;right:16px;padding:12px 14px;border-radius:12px;background:rgba(10,9,9,.7);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.08);font-size:12px;color:var(--silver)}
+.portrait .tag b{color:var(--text);font-weight:500}
+
+section{padding:88px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(34px,4.6vw,56px);line-height:1.02;letter-spacing:-.01em;margin:12px 0 18px}
+h2 em{color:var(--wine2)}
+.sub{color:var(--mute);max-width:620px;font-size:17px}
+
+/* cards */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:44px}
+.card{background:linear-gradient(180deg,var(--bg2),#0d0c0c);border:1px solid var(--line);border-radius:16px;padding:24px;transition:border-color .2s}
+.card:hover{border-color:#4a2a34}
+.card .n{font-size:12px;color:var(--wine2);letter-spacing:.1em}
+.card h3{font-size:19px;font-weight:600;margin:10px 0 6px}
+.card p{color:var(--mute);font-size:15px}
+
+/* blocks */
+.blocks{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-top:44px}
+.b{border:1px solid var(--line);border-radius:12px;padding:16px 12px;background:var(--bg2)}
+.b span{display:block;font-family:"Instrument Serif",serif;font-size:34px;line-height:1;color:var(--silver)}
+.b b{display:block;font-size:14px;margin-top:10px}
+.b small{color:var(--mute);font-size:12px;line-height:1.4;display:block;margin-top:4px}
+.b.hot{border-color:var(--wine);background:linear-gradient(180deg,rgba(143,29,63,.18),var(--bg2))}
+.b.hot span{color:var(--wine2)}
+
+/* compare */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:44px}
+.pr{border:1px solid var(--line);border-radius:16px;padding:22px;background:var(--bg2)}
+.pr .lab{font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px;display:flex;justify-content:space-between;align-items:center}
+.pr.bad .lab{color:var(--mute)}
+.pr.good{border-color:var(--wine)}
+.pr.good .lab{color:var(--wine2)}
+.pr code{font-family:"JetBrains Mono",monospace;font-size:13.5px;line-height:1.7;color:var(--silver);display:block;white-space:pre-wrap}
+.pr.bad code{color:#7d7577;text-decoration:line-through;text-decoration-color:rgba(184,50,92,.6)}
+.copy{font:500 12px Inter,sans-serif;letter-spacing:0;text-transform:none;background:transparent;border:1px solid var(--line);color:var(--silver);border-radius:8px;padding:5px 10px;cursor:pointer}
+.copy:hover{border-color:var(--wine2)}
+
+/* engines */
+.engines{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+.eng{border:1px solid var(--line);border-radius:16px;padding:22px;background:var(--bg2)}
+.eng h3{font-size:22px;font-family:"Instrument Serif",serif;font-weight:400}
+.eng p{color:var(--mute);font-size:14px;margin-top:8px}
+
+/* final */
+.final{text-align:center;padding:110px 0;position:relative}
+.final::before{content:"";position:absolute;left:50%;top:50%;width:800px;height:500px;transform:translate(-50%,-50%);background:radial-gradient(ellipse,var(--glow),transparent 65%);pointer-events:none;opacity:.7}
+.final .wrap{position:relative}
+.final .ctas{justify-content:center}
+.claude-box{max-width:620px;margin:28px auto 0;text-align:left;border:1px solid var(--line);border-radius:14px;padding:18px 20px;background:var(--bg2);display:none}
+.claude-box.open{display:block}
+.claude-box p{color:var(--mute);font-size:14px;margin-bottom:10px}
+.claude-box pre{font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--silver);background:#080707;border:1px solid var(--line);border-radius:10px;padding:12px 14px;overflow-x:auto;margin-bottom:12px}
+.claude-box a{color:var(--wine2);text-decoration:underline;text-underline-offset:3px}
+
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--mute);font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a:hover{color:var(--text)}
+
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;gap:40px}
+  .portrait{max-width:440px}
+  .grid,.engines{grid-template-columns:1fr 1fr}
+  .blocks{grid-template-columns:repeat(4,1fr)}
+  .compare{grid-template-columns:1fr}
+  .navlinks{display:none}
+}
+@media (max-width:560px){
+  .wrap{padding:0 16px}
+  .grid,.engines{grid-template-columns:1fr}
+  .blocks{grid-template-columns:repeat(2,1fr)}
+  .btn{width:100%;justify-content:center}
+  .hero{padding:44px 0 64px}
+  section{padding:64px 0}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#"><img src="icon.png" alt="">Maya Cyberia W7</a>
+    <div class="navlinks">
+      <a href="#faz">O que ela faz</a>
+      <a href="#metodo">Método</a>
+      <a href="#engines">Engines</a>
+      <a href="#usar">Usar agora</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Prompting Specialist Agent · by Cyborg Z9</div>
+      <h1 class="serif">Não peça beleza.<br><em>Descreva imperfeição.</em></h1>
+      <p class="lead">A Maya transforma qualquer ideia num prompt de imagem hiper-realista, pronto pra colar. Câmera com física, luz com direção e os defeitos que uma foto real tem. Você fala em português, ela entrega o prompt em inglês.</p>
+      <div class="ctas">
+        <a class="btn primary chatgpt-link" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.28 9.82a5.98 5.98 0 0 0-.52-4.91 6.05 6.05 0 0 0-6.51-2.9A6.07 6.07 0 0 0 4.98 4.18a5.98 5.98 0 0 0-4 2.9 6.05 6.05 0 0 0 .75 7.1 5.98 5.98 0 0 0 .51 4.91 6.05 6.05 0 0 0 6.51 2.9A5.98 5.98 0 0 0 13.26 24a6.06 6.06 0 0 0 5.77-4.2 5.99 5.99 0 0 0 4-2.9 6.06 6.06 0 0 0-.75-7.08zM13.26 22.43a4.48 4.48 0 0 1-2.88-1.04l.14-.08 4.78-2.76a.79.79 0 0 0 .4-.68v-6.74l2.02 1.17a.07.07 0 0 1 .04.05v5.58a4.5 4.5 0 0 1-4.5 4.5zM3.6 18.3a4.47 4.47 0 0 1-.54-3.01l.14.09 4.78 2.76a.77.77 0 0 0 .78 0l5.84-3.37v2.33a.08.08 0 0 1-.03.06l-4.84 2.79a4.5 4.5 0 0 1-6.14-1.65zM2.34 7.9a4.49 4.49 0 0 1 2.37-1.98v5.68a.77.77 0 0 0 .39.68l5.81 3.35-2.02 1.17a.08.08 0 0 1-.07 0L4 14.03A4.5 4.5 0 0 1 2.34 7.87zm16.6 3.86-5.84-3.39 2.02-1.16a.08.08 0 0 1 .07 0l4.83 2.79a4.49 4.49 0 0 1-.68 8.1v-5.68a.79.79 0 0 0-.4-.67zm2.01-3.02-.14-.09-4.77-2.78a.78.78 0 0 0-.78 0L9.41 9.23V6.9a.07.07 0 0 1 .03-.06l4.83-2.79a4.5 4.5 0 0 1 6.68 4.66zM8.31 12.86 6.29 11.7a.08.08 0 0 1-.04-.06V6.08a4.5 4.5 0 0 1 7.38-3.45l-.14.08-4.78 2.76a.79.79 0 0 0-.4.68zm1.1-2.37 2.6-1.5 2.6 1.5v3l-2.6 1.5-2.6-1.5z"/></svg>
+          Abrir no ChatGPT
+        </a>
+        <button class="btn claude-btn" type="button">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.71 15.96 9.43 13.3l.08-.23-.08-.13h-.23l-.79-.05-2.7-.07-2.34-.1-2.27-.12-.57-.12L0 11.77l.05-.35.48-.32.69.06 1.52.1 2.28.16 1.65.1 2.45.25h.39l.05-.16-.13-.1-.1-.1-2.36-1.6-2.55-1.69-1.34-.97-.72-.5-.37-.46-.16-1.01.66-.72.88.06.22.06.89.69 1.91 1.48 2.5 1.84.36.3.15-.1.02-.07-.17-.27-1.35-2.45-1.45-2.5-.65-1.03-.17-.62a3 3 0 0 1-.1-.73L6.6.11 7.01 0l1 .13.42.37.62 1.42 1.01 2.24 1.56 3.05.46.9.24.84.09.26h.16V8.2l.13-1.73.24-2.12.23-2.73.08-.77.38-.92.75-.5.59.28.48.69-.07.44-.29 1.86-.56 2.9-.36 1.95h.21l.24-.24.98-1.3 1.65-2.07.73-.82.85-.9.54-.43h1.03l.76 1.13-.34 1.16-1.06 1.35-.88 1.14-1.26 1.7-.79 1.36.07.11.19-.02 2.85-.6 1.54-.28 1.83-.31.83.39.09.39-.33.81-1.96.48-2.3.46-3.43.81-.04.03.05.06 1.54.15.66.03h1.62l3.02.23.79.52.47.64-.08.48-1.21.62-1.64-.39-3.82-.91-1.31-.33h-.18v.11l1.09 1.07 2.01 1.81 2.51 2.33.13.58-.32.45-.34-.05-2.2-1.65-.85-.75-1.92-1.62h-.13v.17l.44.65 2.34 3.51.12 1.08-.17.35-.61.21-.66-.12-1.37-1.92-1.41-2.16-1.14-1.94-.14.08-.67 7.24-.32.37-.73.28-.61-.46-.32-.75.32-1.48.39-1.92.31-1.53.29-1.9.17-.63-.01-.04-.14.02-1.44 1.98-2.19 2.96-1.73 1.85-.42.17-.72-.37.07-.67.4-.59 2.4-3.05 1.45-1.89.93-1.09-.01-.16h-.05L4.17 18.56l-1.13.15-.49-.46.06-.75.23-.24 1.91-1.32z"/></svg>
+          Usar no Claude
+        </button>
+      </div>
+      <div class="meta"><span>Grátis</span><span>·</span><span>Open source (MIT)</span><span>·</span><span>Fala português</span></div>
+    </div>
+    <div class="portrait">
+      <img src="maya.jpg" alt="Retrato de Maya Cyberia, cabelo bordô e franja, luz quente lateral" width="800" height="800">
+      <div class="tag"><b>Esse retrato saiu de um prompt da Maya.</b> Poros, fio solto, luz de fim de tarde. Zero "8k masterpiece".</div>
+    </div>
+  </div>
+</header>
+
+<section id="faz">
+  <div class="wrap">
+    <div class="eyebrow">O que ela faz</div>
+    <h2 class="serif">Uma especialista. <em>Seis trabalhos.</em></h2>
+    <p class="sub">Feita com o que a gente aprendeu gerando milhares de imagens pra anúncio, UGC, avatar e packshot. Cada lição custou crédito.</p>
+    <div class="grid">
+      <div class="card"><div class="n mono">01</div><h3>Selfie UGC</h3><p>Foto de iPhone de verdade: ângulo torto, luz da janela, cozinha com ímã na geladeira.</p></div>
+      <div class="card"><div class="n mono">02</div><h3>Avatar e influencer</h3><p>Persona recorrente com o mesmo rosto em todas as fotos. Character sheet e avatar falante.</p></div>
+      <div class="card"><div class="n mono">03</div><h3>Packshot de produto</h3><p>Frasco na mão ou na mesa, na escala certa, rótulo legível e sem produto flutuando.</p></div>
+      <div class="card"><div class="n mono">04</div><h3>Paparazzi e candid</h3><p>Lente longa, gente na frente, foco que escapa. A foto que ninguém posou pra tirar.</p></div>
+      <div class="card"><div class="n mono">05</div><h3>Criativo de anúncio</h3><p>Cena de prova, capa e criativo DTC prontos pra rodar em tráfego pago.</p></div>
+      <div class="card"><div class="n mono">06</div><h3>Conserta prompt com cara de IA</h3><p>Cola o seu prompt. Ela diz por que ficou plástico e devolve a versão que parece foto.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="metodo">
+  <div class="wrap">
+    <div class="eyebrow">O método</div>
+    <h2 class="serif">Sete blocos. <em>Dois fazem 70% do realismo.</em></h2>
+    <p class="sub">Todo prompt da Maya tem a mesma espinha. Luz e imperfeição são onde a imagem deixa de parecer IA.</p>
+    <div class="blocks">
+      <div class="b"><span>1</span><b>Sujeito</b><small>idade, etnia, 2 traços</small></div>
+      <div class="b"><span>2</span><b>Cena</b><small>com desgaste e época</small></div>
+      <div class="b"><span>3</span><b>Ação</b><small>candid, nunca posando</small></div>
+      <div class="b"><span>4</span><b>Câmera</b><small>focal coerente</small></div>
+      <div class="b hot"><span>5</span><b>Luz</b><small>fonte, direção, qualidade</small></div>
+      <div class="b hot"><span>6</span><b>Imperfeição</b><small>2 a 3, nunca mais</small></div>
+      <div class="b"><span>7</span><b>Formato</b><small>proporção e captura</small></div>
+    </div>
+    <div class="compare">
+      <div class="pr bad">
+        <div class="lab">Prompt comum</div>
+        <code>beautiful woman in a kitchen, 8k, masterpiece, flawless perfect skin, ultra detailed, professional photo</code>
+      </div>
+      <div class="pr good">
+        <div class="lab">Prompt da Maya <button class="copy" data-copy="ex1">Copiar</button></div>
+        <code id="ex1">32yo brazilian woman, dark wavy hair tied up, small mole on the left cheek, cramped apartment kitchen with 90s tile and magnets on the fridge, caught mid-laugh reaching for a mug, eyes off-camera, handheld selfie at 26mm, window light from the left, overcast, soft shadows, visible pores, slight motion blur, tilted framing, 9:16, unedited smartphone photo</code>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="engines">
+  <div class="wrap">
+    <div class="eyebrow">Engines</div>
+    <h2 class="serif">Fala o dialeto <em>de cada modelo.</em></h2>
+    <p class="sub">O mesmo truque que funciona numa engine estraga a imagem na outra. A Maya pergunta qual você vai usar antes de escrever.</p>
+    <div class="engines">
+      <div class="eng"><h3>Nano Banana 2.1</h3><p>Google. Prosa natural, ótima com imagem de referência de rosto e produto.</p></div>
+      <div class="eng"><h3>GPT Image</h3><p>OpenAI. Escreve texto muito bem na imagem, então o prompt trava texto indesejado.</p></div>
+      <div class="eng"><h3>Soul 2.0</h3><p>Higgsfield. Sem negative prompt e sem nome de arquivo: aqui tudo vai no modo positivo.</p></div>
+      <div class="eng"><h3>Seedream</h3><p>ByteDance. Realismo editorial com controle fino de luz e textura.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="final" id="usar">
+  <div class="wrap">
+    <div class="eyebrow">Usar agora</div>
+    <h2 class="serif">Um clique e <em>ela tá trabalhando.</em></h2>
+    <p class="sub" style="margin:0 auto">Grátis. Escolhe onde você já trabalha.</p>
+    <div class="ctas">
+      <a class="btn primary chatgpt-link" href="#" target="_blank" rel="noopener">Abrir no ChatGPT</a>
+      <button class="btn claude-btn" type="button">Usar no Claude</button>
+    </div>
+    <div class="claude-box" id="claude-box">
+      <p><b style="color:var(--text)">Claude.ai:</b> baixa a skill e sobe em Configurações → Capacidades → Skills.</p>
+      <pre><a href="maya-cyberia-skill.zip" download>maya-cyberia-skill.zip</a></pre>
+      <p><b style="color:var(--text)">Claude Code:</b> cola os dois comandos.</p>
+      <pre id="cc">/plugin marketplace add cybertronproductions/maya-cyberia-prompting-engineer
+/plugin install maya-cyberia@maya-cyberia</pre>
+      <button class="copy" data-copy="cc">Copiar comandos</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Maya Cyberia W7 · feita por Cybertron Productions / Cyborg Z9 · MIT</span>
+    <span><a href="https://github.com/cybertronproductions/maya-cyberia-prompting-engineer" target="_blank" rel="noopener">GitHub</a> · <a href="https://github.com/cybertronproductions/maya-cyberia-prompting-engineer/issues" target="_blank" rel="noopener">Suporte</a></span>
+  </div>
+</footer>
+
+<script>
+// Troque pelo link do plugin no diretório do ChatGPT assim que ele for publicado.
+const CHATGPT_URL = "https://chatgpt.com/?q=" + encodeURIComponent("Maya Cyberia, cria um prompt hiper-realista de selfie UGC de uma mulher de 30 anos na cozinha, pro Nano Banana.");
+document.querySelectorAll(".chatgpt-link").forEach(a => a.href = CHATGPT_URL);
+const box = document.getElementById("claude-box");
+document.querySelectorAll(".claude-btn").forEach(b => b.addEventListener("click", () => {
+  box.classList.add("open");
+  box.scrollIntoView({behavior: "smooth", block: "center"});
+}));
+document.querySelectorAll("[data-copy]").forEach(b => b.addEventListener("click", () => {
+  navigator.clipboard.writeText(document.getElementById(b.dataset.copy).innerText.trim());
+  const t = b.textContent; b.textContent = "Copiado"; setTimeout(() => b.textContent = t, 1400);
+}));
+</script>
+</body>
+</html>
