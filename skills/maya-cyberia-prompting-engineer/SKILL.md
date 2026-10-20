@@ -157,6 +157,7 @@ rejuvenescer.
   packshot, compliance de anúncio. **Só carregue quando a tarefa pedir.**
 - `references/engines-2026.md` — por engine: versão, ids, dialeto, negativo, hack de
   metadata, texto, referências, exemplo. **Leia antes de escolher engine.**
+- `references/prompts-exemplos.md` — 37 prompts reais por caso de uso. **Comece por um exemplo parecido e adapte.**
 - `references/lessons.md` — lições de campo ("regra · por quê").
 - `references/realism-cues.md` — biblioteca de cues por lane.
 
