@@ -6,11 +6,15 @@ Engenharia de prompt de imagem hiper-realista, open source. Tudo que a gente apr
 gerando milhares de imagens pra anúncio, UGC, avatar e packshot, empacotado pra rodar
 em 3 lugares:
 
-| Onde | Como usar |
-|---|---|
-| **ChatGPT** (GPT Store) | 👉 **[Abrir a Maya Cyberia no ChatGPT](GPT_LINK)** — de graça, é só clicar |
-| **Claude Code** | plugin (instala em 2 comandos, abaixo) |
-| **Codex / outro agente** | copia a pasta `skills/maya-cyberia-prompting-engineer` |
+## ⚡ Instala em 10 segundos: solta no seu agente
+
+Copia a frase abaixo e cola no seu agente (Claude Code, Codex, Cursor, Gemini CLI, qualquer um que use skills):
+
+```
+Instala a skill Maya Cyberia Prompting Engineer pra mim: baixa https://github.com/cybertronproductions/maya-cyberia-prompting-engineer/releases/latest/download/maya-cyberia-1.0.0.zip, descompacta e copia a pasta skills/maya-cyberia-prompting-engineer inteira pra pasta de skills do agente que você é (Claude Code: ~/.claude/skills/ · Codex: ~/.codex/skills/ · outro: a pasta de skills dele). Depois lê o SKILL.md e me confirma que a Maya Cyberia tá instalada.
+```
+
+Pronto. Depois é só pedir: *"maya cyberia, prompt de selfie UGC de uma mulher de 30 anos na cozinha"*.
 
 Engines cobertas: **Nano Banana**, **GPT Image 2**, **Higgsfield Soul 2.0** e
 **Seedream**. Detalhe de cada uma (versão,
@@ -62,12 +66,6 @@ Depois é só pedir: *"maya cyberia, prompt de selfie UGC de uma mulher de 30 an
 git clone https://github.com/cybertronproductions/maya-cyberia-prompting-engineer
 cp -r maya-cyberia-prompting-engineer/skills/maya-cyberia-prompting-engineer ~/.codex/skills/
 ```
-
-### Seu próprio GPT
-
-Quer montar o seu? Tudo que vai no GPT Builder está em [`chatgpt/`](chatgpt/):
-`instructions.md` (cola em Instructions), `knowledge/` (sobe como Knowledge) e
-`gpt-config.md` (nome, descrição, conversation starters, foto).
 
 ### CLI de lote (opcional)
 
