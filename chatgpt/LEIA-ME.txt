@@ -1,0 +1,25 @@
+Maya Cyberia — configuração em um Projeto do ChatGPT
+
+1. Descompacte este ZIP.
+2. Entre em https://chatgpt.com/ com a sua própria conta.
+3. Crie um projeto chamado Maya Cyberia.
+4. Abra as instruções do projeto e cole todo o conteúdo de instructions.md.
+5. Adicione ao projeto estes quatro arquivos da pasta knowledge:
+   doctrine.md
+   engines-2026.md
+   playbook.md
+   realism-cues.md
+6. Abra uma conversa dentro desse projeto e peça um prompt de imagem.
+
+Use sempre uma conversa dentro do projeto para disponibilizar as instruções
+e os arquivos da Cyberia. Não é necessário compartilhar senha ou chave de API.
+A disponibilidade de Projetos e de uploads depende da sua conta e das
+configurações do workspace. A geração de imagens usa os recursos do seu plano.
+
+Documentação oficial:
+https://help.openai.com/en/articles/10169521-using-projects-in-chatgpt
+
+Repositório oficial e suporte:
+https://github.com/cybertronproductions/maya-cyberia-prompting-engineer
+
+Licença MIT. Copyright (c) 2026 Cyborg Z9.

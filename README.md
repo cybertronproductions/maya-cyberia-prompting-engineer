@@ -51,6 +51,20 @@ em `engines-2026.md`.
 
 ## Instalar
 
+### Claude.ai (upload de skill)
+
+[Baixar maya-cyberia-skill.zip](https://cybertronproductions.github.io/maya-cyberia-prompting-engineer/maya-cyberia-skill.zip).
+Envie esse ZIP, sem descompactar, em **Personalizar → Skills → Adicionar**
+(em algumas versões: **Configurações → Capacidades → Skills**) e ative a skill.
+O ZIP contém a pasta da skill diretamente na raiz. A disponibilidade depende da sua conta e das permissões do workspace.
+
+### ChatGPT (Projeto)
+
+[Baixar o pacote para Projeto do ChatGPT](https://cybertronproductions.github.io/maya-cyberia-prompting-engineer/maya-cyberia-chatgpt-projeto.zip) e descompactar.
+Crie um projeto chamado **Maya Cyberia**, cole `instructions.md` nas instruções do projeto
+e adicione os quatro arquivos de `knowledge/`. Converse com a Maya dentro desse projeto.
+O pacote inclui `LEIA-ME.txt` com o passo a passo. Um chat comum aberto por link não instala a Cyberia.
+
 ### Claude Code (plugin)
 
 ```
@@ -115,3 +129,10 @@ filename hacks (with per-engine caveats), engine dialects for Nano Banana, GPT I
 Higgsfield Soul 2.0 and Seedream. MIT licensed.
 
 Feito por **Cyborg Z9** · MIT
+
+## Conferir os downloads
+
+Os pacotes e seus hashes SHA-256 ficam na [release mais recente](https://github.com/cybertronproductions/maya-cyberia-prompting-engineer/releases/latest).
+O arquivo `maya-cyberia-1.0.0.zip` nesse endereço é mantido como alias compatível para os links de instalação já divulgados; a versão real está no `plugin.json` dentro dele.
+Para reconstruir os pacotes a partir deste repositório: `python scripts/package_release.py`.
+O script usa apenas Python padrão, preserva os arquivos da skill e verifica o conteúdo de cada ZIP.
