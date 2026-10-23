@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "maya-cyberia",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Hyper-realistic image prompt engineering by Z9: describe imperfection, never beauty. Nano Banana 2.1, GPT Image, Higgsfield Soul 2.0, Seedream.",
   "author": { "name": "Cyborg Z9", "url": "https://github.com/cybertronproductions" },
   "homepage": "https://github.com/cybertronproductions/maya-cyberia-prompting-engineer",

@@ -50,6 +50,18 @@ def main():
     # Keep already-shared /latest/download URLs working across releases.
     (DIST / "maya-cyberia-1.0.0.zip").write_bytes((DIST / "maya-cyberia-plugin.zip").read_bytes())
     skill_only = {name.removeprefix("skills/"): source for name, source in skill.items()}
+    # Claude.ai documents a shorter metadata limit than the general skill format.
+    original = skill[SKILL + "SKILL.md"].read_bytes()
+    newline = b"\r\n" if original.startswith(b"---\r\n") else b"\n"
+    empty, header, body = original.split(b"---" + newline, 2)
+    assert not empty and b"name: maya-cyberia-prompting-engineer" in header
+    description = json.loads((ROOT / ".claude-plugin/plugin.json").read_text(encoding="utf-8"))["description"]
+    assert 0 < len(description) <= 200
+    metadata = ["---", "name: maya-cyberia-prompting-engineer", "description: " + json.dumps(description, ensure_ascii=False), "---", ""]
+    compatible = DIST / "SKILL.md"
+    compatible.write_bytes(newline.join(line.encode("utf-8") for line in metadata) + body)
+    assert compatible.read_bytes().split(b"---" + newline, 2)[2] == body
+    skill_only["maya-cyberia-prompting-engineer/SKILL.md"] = compatible
     skill_only["maya-cyberia-prompting-engineer/LICENSE"] = ROOT / "LICENSE"
     package(DIST / "maya-cyberia-skill.zip", skill_only)
     chatgpt = {name.removeprefix("chatgpt/"): source for name, source in tracked("chatgpt/instructions.md", "chatgpt/knowledge").items()}
