@@ -135,4 +135,4 @@ Feito por **Cyborg Z9** · MIT
 Os pacotes e seus hashes SHA-256 ficam na [release mais recente](https://github.com/cybertronproductions/maya-cyberia-prompting-engineer/releases/latest).
 O arquivo `maya-cyberia-1.0.0.zip` nesse endereço é mantido como alias compatível para os links de instalação já divulgados; a versão real está no `plugin.json` dentro dele.
 Para reconstruir os pacotes a partir deste repositório: `python scripts/package_release.py`.
-O script usa apenas Python padrão, preserva os arquivos da skill e verifica o conteúdo de cada ZIP.
+O script usa apenas Python padrão, preserva o corpo da skill e os prompts e verifica o conteúdo de cada ZIP.
